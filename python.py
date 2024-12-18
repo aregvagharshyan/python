@@ -1,7 +1,7 @@
 def big_of_two(x, y):
     if x > y:
         return x
-    if x < y:
+    else :
         return y
 
 def big_of_three(z, big_of_two):
