@@ -1,16 +1,11 @@
-def big_of_two(x, y):
-    if x > y:
-        return x
-    else :
-        return y
+def has_capital_letter(letter):
+    letter = letter[0].isupper()
+    return letter
 
-def big_of_three(z, big_of_two):
-    if z > big_of_two:
-        return z
-    if z < big_of_two:
-        return big_of_two
+def is_correct_password(password):
+   length = len(password)
+   return length > 8 and has_capital_letter(password)
 
-
-print(big_of_three(5, big_of_two(1,3)))
-
-
+print(is_correct_password('Qwerty1234'))
+print(is_correct_password('qwerty1234'))
+print(is_correct_password('Qwe1234'))
